@@ -1,4 +1,4 @@
-# Day Log
+# Personal Log
 
 A small personal app for a daily habit challenge (500 days by default). Each day you log your habits, the app scores the day, and it keeps your streak, a month calendar, a view of the whole challenge and a journal of your "moral of the day".
 
