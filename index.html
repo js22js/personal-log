@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Day Log</title>
+<title>Personal Log</title>
 <meta name="theme-color" content="#f5f3f8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0f0d13" media="(prefers-color-scheme: dark)">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Day Log">
+<meta name="apple-mobile-web-app-title" content="Peronsal Log">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon-192.png">
@@ -681,7 +681,7 @@ function importFile(file){
   r.onerror = function(){ toast('Could not read that file.'); };
   r.onload = function(){
     var d = null; try{ d = clean(JSON.parse(r.result)); }catch(e){}
-    if(!d){ ask('That file is not a Day Log backup', 'Choose a .json file made with Export backup.', [{label:'OK', cls:'primary'}]); return; }
+    if(!d){ ask('That file is not a Peronsal Log backup', 'Choose a .json file made with Export backup.', [{label:'OK', cls:'primary'}]); return; }
     var have = Object.keys(state.days).length, inFile = Object.keys(d.days), news = inFile.filter(function(k){ return !state.days[k]; });
     var merge = function(){
       var ids = {}; state.habits.forEach(function(h){ ids[h.id] = 1; });
