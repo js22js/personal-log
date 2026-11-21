@@ -1,0 +1,14 @@
+{
+  "name": "Day Log",
+  "short_name": "Day Log",
+  "description": "Log your daily habits, score each day and keep the streak going. Data stays on this device.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#f5f3f8",
+  "theme_color": "#17121f",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
